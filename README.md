@@ -1,4 +1,6 @@
-Using the temperature(heat maps) draws New Delhi city map (temperature basis).
+# Temperature assessment using GIS
+
+Using the past average temperature draws New Delhi city heat map.
 
 Static example - 
 
