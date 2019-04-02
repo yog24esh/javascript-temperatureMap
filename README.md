@@ -1,12 +1,13 @@
 Using the temperature(heat maps) draws New Delhi city map (temperature basis).
 
+Static example - 
 
 ![eg01](https://raw.githubusercontent.com/yog24esh/javascript-temperatureMap/master/res/Screenshot%20(43).png)
 
 
 Live on - https://codepen.io/smasher/full/GOqRVm/
 
-# Temperature Map
+# Temperature Map Library Use
 Library to draw temperature maps (heat maps) using Canvas/Javascript. Drawing shows an animation and does not block the main process.
 
 Values are calculated using 'Inverse Distance Weighting (IDW)' algorithm:
