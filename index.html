@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!--          <script type="text/javascript" src="script.js"></script> -->
+</head>
+
+<body onload='run()'>
+
+    <h1>Research Project</h1>
+    <p>About : This project is based on showing the color variation GIS image according to the <a
+            href="http://www.imd.gov.in/pages/city_weather_main.php">temperature collected</a> from different location
+        around the area(New Delhi,IN).
+        It uses the<a href="https://en.wikipedia.org/wiki/Inverse_distance_weighting"> inverse interpolation</a> for
+        temperature variation.</p>
+
+
+    <img class="imag"
+        src='https://user-images.githubusercontent.com/16835166/32336277-de688f84-c014-11e7-9bb1-e8efb4dca402.png'>
+    <canvas id='cns0' width='1024' height='587'>
+    </canvas>
+
+    <script>
+        var width = document.querySelector(".imag").width;
+        var height = document.querySelector(".imag").height;
+        var top = document.querySelector(".imag").top;
+        document.querySelector("canvas").style.width = width;
+        document.querySelector("canvas").style.height = height;
+
+        // var height = document.querySelector(".imag").height;
+        // var width = document.querySelector(".imag").width;
+        //below values could be taken dynamically also
+        var arr = [{
+                x: 170,
+                y: 100,
+                value: 31
+            },
+            {
+                x: 300,
+                y: 50,
+                value: 29.9
+            },
+            {
+                x: 550,
+                y: 70,
+                value: 30
+            },
+            {
+                x: 550,
+                y: 150,
+                value: 30.8
+            },
+            {
+                x: 700,
+                y: 296,
+                value: 30.1
+            },
+            {
+                x: 650,
+                y: 550,
+                value: 30.3
+            },
+            {
+                x: 500,
+                y: 600,
+                value: 29.8
+            },
+            {
+                x: 150,
+                y: 550,
+                value: 29.6
+            },
+            {
+                x: 50,
+                y: 350,
+                value: 30.9
+            },
+            {
+                x: 150,
+                y: 200,
+                value: 30.0
+            },
+            {
+                x: 350,
+                y: 400,
+                value: 29.8
+            },
+        ]
+        var run = function () {
+            var can0 = document.getElementById("cns0"),
+                ctx0 = can0.getContext("2d"),
+                drw0 = new TemperatureMap(ctx0);
+
+            drw0.setPoints(arr, width, height);
+
+            drw0.drawFull(true, function () {});
+
+        }
+    </script>
+
+    <!--         <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="script.js"></script> -->
+</body>
+
+</html>
