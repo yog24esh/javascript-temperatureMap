@@ -7,7 +7,7 @@ Static example -
 ![eg01](https://raw.githubusercontent.com/yog24esh/javascript-temperatureMap/master/res/Screenshot%20(43).png)
 
 
-Live on - https://codepen.io/smasher/full/GOqRVm/
+Live on - https://tempmap1.herokuapp.com/
 
 # Temperature Map Library Use
 Library to draw temperature maps (heat maps) using Canvas/Javascript. Drawing shows an animation and does not block the main process.
