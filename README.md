@@ -1,5 +1,7 @@
 Using the temperature(heat maps) draws New Delhi city map (temperature basis).
-Certain Variables are changed.
+
+
+![eg01](https://raw.githubusercontent.com/yog24esh/javascript-temperatureMap/master/res/Screenshot%20(43).png)
 
 
 Live on - https://codepen.io/smasher/full/GOqRVm/
